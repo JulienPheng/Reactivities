@@ -1,6 +1,3 @@
-using System.Globalization;
-using System.Runtime.ConstrainedExecution;
-
 namespace Domain
 {
     public class Activity
