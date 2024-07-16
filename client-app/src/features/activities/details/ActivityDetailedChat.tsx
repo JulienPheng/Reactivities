@@ -43,7 +43,7 @@ export default observer(function ActivityDetailedChat({activityId}: Props) {
                         body: Yup.string().required()
                     })}
                 >
-                    {({ isSubmitting, isValid, handleSubmit }) => (
+                    {({ isValid, handleSubmit }) => (
                         <Form className = 'ui form'>
                             <Field name = 'body' >
                                 {(props: FieldProps) => (
@@ -68,7 +68,7 @@ export default observer(function ActivityDetailedChat({activityId}: Props) {
                         </Form>
                     )}
                 </Formik>
-                
+
                 <Comment.Group>
                     {commentStore.comments.map(comment => (
                         <Comment key = {comment.id}>
